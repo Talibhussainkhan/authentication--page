@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <div class="h-screen w-full flex justify-center items-center">
+        
+      <div class="flex flex-col space-y-3 bg-muted-foreground shadow-2xl w-full max-w-md  px-8 py-5">
+        <div class="flex flex-col">
+            <p>Already have an account?<a href="/signInPage.html" class="ml-2 font-bold">Sign In</a></p>
+            <label class="text-xl ">Username:</label>
+        <input required id="signUpUserName" class="focus:ring-1 focus:ring-emerald-300 focus:outline-none border-1 border-gray-600 h-10 px-4 rounded-sm" type="text" placeholder="Enter Your Username" />
+        </div>
+        <div class="flex flex-col">
+            <label class="text-xl">Email:</label>
+        <input required id="signUpEmail" class="focus:ring-1 focus:ring-emerald-300 focus:outline-none border-1 border-gray-600 h-10 px-4 rounded-sm" type="email" placeholder="Enter Your Email" />
+        </div>
+        <div class="flex flex-col">
+            <label class="text-xl">Password:</label>
+        <input required id="signUpPassword" class="focus:ring-1 focus:ring-emerald-300 focus:outline-none border-1 border-gray-600 h-10 px-4 rounded-sm" type="password" placeholder="Enter Your Password" />
+        </div>
+        <button type="submit" onclick="signUp()" class="bg-emerald-700 text-white rounded-xl h-10 hover:bg-emerald-600 cursor-pointer">Sign Up</button>
+      </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
